@@ -15,7 +15,7 @@ from sqlalchemy import (
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import relationship
 
-from app.database.connection import Base
+from app.database.base import Base
 
 from app.database.models.audit_mixin import AuditMixin
 from app.enums.transaction import (

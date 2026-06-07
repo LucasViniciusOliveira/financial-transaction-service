@@ -7,7 +7,7 @@ from sqlalchemy import (
 )
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import relationship
-from app.database.connection import Base
+from app.database.base import Base
 from app.database.models.audit_mixin import AuditMixin
 
 
@@ -29,11 +29,11 @@ class Category(Base, AuditMixin):
 
     is_active = Column(Boolean, nullable=False, default=True)
 
-    transactions = relationship(
-        "Transaction",
-        secondary="transaction_categories",
-        back_populates="categories",
-    )
+    # transactions = relationship(
+    #     "Transaction",
+    #     secondary="transaction_categories",
+    #     back_populates="categories",
+    # )
 
     user_id = Column(
         UUID(as_uuid=True),

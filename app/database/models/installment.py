@@ -9,7 +9,7 @@ from sqlalchemy import (
 )
 from sqlalchemy.dialects.postgresql import UUID
 
-from app.database.connection import Base
+from app.database.base import Base
 from app.database.models.audit_mixin import AuditMixin
 
 

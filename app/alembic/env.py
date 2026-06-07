@@ -15,7 +15,7 @@ sys.path.append(
     os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
 )
 
-from app.database.connection import Base
+from app.database.base import Base
 
 config = context.config
 
