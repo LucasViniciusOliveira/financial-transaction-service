@@ -1,0 +1,49 @@
+{
+    "id": 123456789,
+    "parent_transaction_id": null,
+    "identification": "Compra Notebook Dell",
+    "description": "Compra realizada no site Kabum",
+    "status": "PENDING",
+    "type": "EXPENSE",
+    "payment_method": "CARD",
+    "card_type": "CREDIT",
+    "due_date": "2026-05-25T00:00:00Z",
+    "payment_date": null,
+    "amount": 4500.75,
+    "payment_receipt_url": "https://meubucket.s3.amazonaws.com/comprovantes/compra-1.pdf",
+    "card_id": "card_12345",
+    "bank_account_output_id": "bank_acc_001",
+    "bank_account_input_id": null,
+    "installment": {
+        "transaction_id": 123456789,
+        "number": 1,
+        "total": 12,
+        "amount": 350,
+        "status": "PENDING"
+    },
+    "recurrence_rule": {
+        "transaction_id": 123456789,
+        "recurrence_frequency": "MONTHLY",
+        "installment_quantity": 12,
+        "is_recurring": true,
+        "is_installment": true,
+        "end_date": "2026-09-01",
+        "start_date": "2026-12-01",
+        "next_execution": "2026-06-01"
+    },
+
+    "categories": [
+        {
+            "transaction_id": 123456789,
+            "id": "a2c2b76f-db36-4331-a335-5c791511bb1f"
+        },
+        {
+            "transaction_id": 123456789,
+            "id": "bd1b2b8d-9da8-410e-a0cd-c682a189d485"
+        },
+        {
+            "transaction_id": 123456789,
+            "id": "9954b0d9-26bb-4428-8ebe-99f7ac73f641"
+        }
+    ]
+}

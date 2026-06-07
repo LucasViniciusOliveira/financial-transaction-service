@@ -26,6 +26,7 @@ sudo apt update
 ## Instalar suporte ao ambiente virtual no WSL
 
 ```bash
+sudo apt update
 sudo apt install python3.12-venv
 ```
 
@@ -96,7 +97,7 @@ uvicorn main:app --reload
 # 📁 Estrutura Inicial do Projeto
 
 ```txt
-fast-api-project/
+financial-transaction-service/
 │
 ├── venv/
 ├── main.py
